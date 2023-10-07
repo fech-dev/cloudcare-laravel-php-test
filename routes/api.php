@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\BeerController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +25,13 @@ Route::prefix('/auth')
         Route::post('/login', LoginController::class)->name('auth.login');
 
         Route::middleware('auth:api')->group(function () {
-            //protected auth api routes
+            // Protected auth api routes
+            // Route::get('/me', App\Http\Controllers\Auth\MeControler::class)->name('auth.me');
+            // Route::post('/logout', App\Http\Controllers\Auth\LogoutController::class)->name('auth.logout');
         });
     });
+
+
+Route::middleware('auth:api')->group(function () {
+    Route::apiResource('beers', BeerController::class)->only(['index']);
+});
