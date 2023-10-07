@@ -9,11 +9,17 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				// "mikestead.dotenv",
-				// "amiralizadeh9480.laravel-extra-intellisense",
-				// "ryannaddy.laravel-artisan",
-				// "onecentlin.laravel5-snippets",
-				// "onecentlin.laravel-blade"
+				"open-southeners.laravel-pint",
+				"mikestead.dotenv",
+				"amiralizadeh9480.laravel-extra-intellisense",
+				"ryannaddy.laravel-artisan",
+				"DEVSENSE.phptools-vscode",
+				"neilbrayfield.php-docblocker",
+				"zobo.php-intellisense",
+				"ctf0.php-namespace-resolver",
+				"onecentlin.laravel-extension-pack",
+				"junstyle.php-cs-fixer"
+				
 			],
 			"settings": {}
 		}
